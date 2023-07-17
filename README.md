@@ -20,15 +20,15 @@ The keyboard layout is as follows:
 * `git clone [https://github.com/your-username/knight-key-sequences.git1](https://github.com/KhanhQuy/TypeScript.git)`
 
 2. Navigate into the project directory:
-`cd knight-key-sequences`
+* `cd knight-key-sequences`
 
-3.Install the project dependencies:
-`npm install`
+3. Install the project dependencies:
+* `npm install`
 
 4. Compile the TypeScript code:
-`npx tsc`
+* `npx tsc`
 
 5. Run the program with Node.js:
-`node dist/index.js`
+* `node dist/index.js`
 
 This will print the total number of valid 10-key sequences to the console.
