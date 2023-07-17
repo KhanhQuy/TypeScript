@@ -5,9 +5,9 @@ This project calculates all possible 10-key sequences on a given keyboard layout
 The keyboard layout is as follows:
 
 
-[A] [B] [C] [D] [E] __
-[F] [G] [H] [I] [J] __
-[K] [L] [M] [N] [O] __
+[A] [B] [C] [D] [E]__
+[F] [G] [H] [I] [J]__
+[K] [L] [M] [N] [O]__
 [None] [1] [2] [3] [None]__
      
 ## Project Setup
