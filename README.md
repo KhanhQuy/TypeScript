@@ -11,16 +11,11 @@ The keyboard layout is as follows:
 [None] [1] [2] [3] [None]<br />
 
 # Problem-sloving
-To solve the problem, I implemented a Breadth-First Search (BFS) algorithm. BFS is typically used for pathfinding problems or when one needs to explore all possible paths in a graph. In this scenario, I treated the keys on the keyboard as nodes of a graph, with knight's moves acting as the edges connecting these nodes. 
 
-Throughout the code, I kept track of several important variables: 
+In problem-solving scenarios that involve traversing or searching a graph-like structure, understanding the nature of the problem and aligning it with the appropriate algorithm is critical. For the task of calculating all potential 10-key sequences on a keyboard, Depth-First Search (DFS) emerges as an ideal choice over its counterpart, Breadth-First Search (BFS).
 
-1. I ensured all knight moves remained within the bounds of the keyboard and were only on valid keys, to avoid counting invalid paths. 
-2. I monitored the number of vowels used in a sequence and disallowed any sequence with more than two vowels. 
-3. I recorded the length of the sequences, ensuring that they were only counted when they reached a length of ten. 
+DFS, with its inherent ability to explore a path to its deepest extent before backtracking, aligns perfectly with the problem of discovering all possible 10-key sequences. DFS exhaustively explores each path, ensuring that all sequences reaching the desired depth of ten key presses are considered. The problem's constraints, such as limiting the number of vowels in a sequence, can lead to premature termination of a path, which DFS can handle efficiently with its innate backtracking mechanism.
 
-My approach to managing these variables involved using a dictionary to store the count of sequences at each point, which ensured efficient lookups and updates. 
-     
 ## Project Setup
 ### Prerequisites
 . Node.js
