@@ -1,6 +1,18 @@
 # Knight Key Sequences
 This project calculates all possible 10-key sequences on a given keyboard layout where each subsequent key press must be a knight's move away (like in chess) from the previous key, with no more than 2 vowels per sequence. Repeat keys are allowed and no topological wrapping of the keyboard is permitted.
 
+# Problem-sloving:
+To solve the problem, I implemented a Breadth-First Search (BFS) algorithm. BFS is typically used for pathfinding problems or when one needs to explore all possible paths in a graph. In this scenario, I treated the keys on the keyboard as nodes of a graph, with knight's moves acting as the edges connecting these nodes. 
+
+Throughout the code, I kept track of several important variables: 
+
+1. I ensured all knight moves remained within the bounds of the keyboard and were only on valid keys, to avoid counting invalid paths. 
+2. I monitored the number of vowels used in a sequence and disallowed any sequence with more than two vowels. 
+3. I recorded the length of the sequences, ensuring that they were only counted when they reached a length of ten. 
+
+My approach to managing these variables involved using a dictionary to store the count of sequences at each point, which ensured efficient lookups and updates. 
+
+
 ## Keyboard Layout
 The keyboard layout is as follows:
 
